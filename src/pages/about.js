@@ -1,10 +1,10 @@
 import React from "react"
-import Header from "../components/Header/header"
-import Footer from "../components/Footer/footer"
+
+import Layout from "../layouts"
+
 export default function AboutPage() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>About Me</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magni
@@ -12,7 +12,6 @@ export default function AboutPage() {
         quisquam repellat laborum incidunt veniam itaque esse ea cupiditate quas
         nobis?
       </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
