@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+
+import * as headerStyles from "./header.module.scss"
 export default function Header() {
   return (
     <header>
@@ -7,7 +9,9 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>{" "}
+            <Link className={headerStyles.link} to="/">
+              Home
+            </Link>{" "}
           </li>
           <li>
             <Link to="/about">About</Link>
