@@ -1,17 +1,40 @@
-import React from "react"
+import * as React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../layouts/layout"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-export default function AboutPage() {
+import styled from "styled-components";
+
+const About = ({ location }) => {
+  console.log(location);
   return (
-    <Layout>
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magni
-        temporibus voluptates rem sunt delectus error voluptate animi debitis
-        quisquam repellat laborum incidunt veniam itaque esse ea cupiditate quas
-        nobis?
-      </p>
+    <Layout location={location}>
+      <h1>About Page</h1>
     </Layout>
-  )
-}
+  );
+};
+export default About;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+  }
+`;
