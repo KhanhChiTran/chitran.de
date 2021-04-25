@@ -9,19 +9,6 @@ import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
-import styled from "styled-components";
-
-const HeaderWrap = styled.div`
-  width: 100%;
-  padding: 10px 0;
-  background-color: #e1e0fc;
-`;
-
-const HeaderNav = styled.nav`
-  display: flex;
-  justify-content: space-around;
-`;
-
 const Header = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -44,12 +31,27 @@ const Header = () => {
   const social = data.site.siteMetadata?.social;
 
   return (
-    <HeaderWrap>
-      <HeaderNav>
-        <Link to="/"> ChiTran</Link>
-        <Link to="/about">About</Link>
-      </HeaderNav>
-    </HeaderWrap>
+    <div className="header-wrap">
+      <div className="header-logo">
+        <h1>CHI</h1>
+      </div>
+      <nav className="header-nav">
+        <Link to="/" activeClassName="active">
+          Home
+        </Link>
+        <Link to="/about" activeClassName="active">
+          About
+        </Link>
+        <Link to="/projects" activeClassName="active">
+          Projects
+        </Link>
+
+        <Link to="/hire" activeClassName="active">
+          {" "}
+          Hire
+        </Link>
+      </nav>
+    </div>
   );
 };
 

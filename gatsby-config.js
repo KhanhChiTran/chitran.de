@@ -24,7 +24,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
@@ -47,6 +47,14 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
       },
     },
     `gatsby-transformer-sharp`,
@@ -72,6 +80,7 @@ module.exports = {
             }
           }
         `,
+
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -118,7 +127,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/chitranlogo.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/chitranlogo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
