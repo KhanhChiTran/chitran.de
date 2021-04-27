@@ -40,17 +40,18 @@
   justify-content: space-evenly;
   align-items: center;
   padding-right: 10px;
+  //   padding: 8px 16px;
 }
 .header-nav > * {
   text-decoration: none;
   color: black;
   margin-left: 20px;
   font-size: large;
+  padding: 6px 12px;
 }
 .active {
   color: red;
   font-weight: var(--fontWeight-bold);
-  padding: 8px 16px;
   box-shadow: inset 2px 2px 3px 2px #ccc;
   border-radius: 2px solid #ccc;
 }

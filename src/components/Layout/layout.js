@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import Header from "../../Header/header";
-import SideBar from "../../Sidebar/sidebar";
+import Header from "../Header/header";
+import SideBar from "../Sidebar/sidebar";
 import "./layout.scss";
 
 const Layout = ({ location, title, children }) => {
