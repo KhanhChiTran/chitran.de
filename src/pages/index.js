@@ -1,7 +1,7 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 import styled from "styled-components";
 
@@ -16,6 +16,11 @@ const BlogIndex = ({ data, location }) => {
     background-color: ${color ? "red" : "black"};
     border: 1px solid red;
   `;
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/carts")
+      .then((res) => res.json())
+      .then((json) => console.log(json));
+  }, []);
 
   return (
     <Layout location={location} title={siteTitle}>

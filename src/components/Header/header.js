@@ -8,6 +8,7 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import './header.scss'
 
 const Header = () => {
   const data = useStaticQuery(graphql`

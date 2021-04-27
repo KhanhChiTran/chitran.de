@@ -130,6 +130,7 @@ module.exports = {
         icon: `src/assets/images/chitranlogo.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
