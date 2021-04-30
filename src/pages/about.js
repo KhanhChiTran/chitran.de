@@ -10,6 +10,7 @@ const About = ({ location }) => {
   console.log(location);
   return (
     <Layout location={location}>
+      <SEO title="About" />
       <h1>About Page</h1>
     </Layout>
   );

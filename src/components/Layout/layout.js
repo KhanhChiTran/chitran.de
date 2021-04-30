@@ -30,7 +30,20 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <SideBar />
       <div className="circle"></div>
-      <footer>© {new Date().getFullYear()}, by ChiTran</footer>
+      <footer>
+        © {new Date().getFullYear()}. Made by{" "}
+        <a target="__blank" href="https://www.chitran.de">
+          ChiTran.
+        </a>{" "}
+        Built with{" "}
+        <a target="__blank" href="https://www.gatsbyjs.org">
+          Gatsby.
+        </a>{" "}
+        Deployed with{" "}
+        <a target="__blank" href="https://www.netlify.com">
+          Netlify.
+        </a>
+      </footer>
     </div>
   );
 };

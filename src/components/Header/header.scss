@@ -17,6 +17,9 @@
 .header-logo {
   position: relative;
   background-color: white;
+  a {
+    text-decoration: none;
+  }
   h1 {
     margin: 0;
     margin-left: 10px;

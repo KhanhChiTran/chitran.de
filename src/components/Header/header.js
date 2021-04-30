@@ -8,7 +8,7 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import './header.scss'
+import "./header.scss";
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,9 @@ const Header = () => {
   return (
     <div className="header-wrap">
       <div className="header-logo">
-        <h1>CHI</h1>
+        <Link to="/">
+          <h1>CHI</h1>{" "}
+        </Link>
       </div>
       <nav className="header-nav">
         <Link to="/" activeClassName="active">
