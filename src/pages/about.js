@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
+import Helmet from "react-helmet";
 
 import styled from "styled-components";
 

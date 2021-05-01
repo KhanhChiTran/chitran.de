@@ -7,14 +7,18 @@ function SideBar() {
   return (
     <ul className="side-bar">
       <li className="side-bar_item">
-        <GithubIcon className="icon github" />
+        <a href="https://github.com/KhanhChiTran">
+          <GithubIcon className="icon github" />
+        </a>
         {/* <span>Github</span> */}
       </li>
       <li className="side-bar_item">
         <FacebookIcon className="icon facebook" />
       </li>
       <li className="side-bar_item">
-        <LinkedinIcon className="icon linkedin" />
+        <a href="https://www.linkedin.com/in/chi-tran-6393b7204/">
+          <LinkedinIcon className="icon linkedin" />
+        </a>
       </li>
     </ul>
   );
