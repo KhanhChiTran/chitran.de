@@ -356,6 +356,6 @@ main {
     list-style-position: inside;
   }
   .side-bar {
-    display: none;
+    left: -13px !important ;
   }
 }
