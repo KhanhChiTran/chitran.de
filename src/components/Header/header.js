@@ -5,31 +5,31 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import "./header.scss";
+import * as React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import "./header.scss"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query BioQuery {
+  //     site {
+  //       siteMetadata {
+  //         author {
+  //           name
+  //           summary
+  //         }
+  //         social {
+  //           twitter
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author;
-  const social = data.site.siteMetadata?.social;
+  // const author = data.site.siteMetadata?.author;
+  // const social = data.site.siteMetadata?.social;
 
   return (
     <div className="header-wrap">
@@ -42,20 +42,20 @@ const Header = () => {
         <Link to="/" activeClassName="active">
           Home
         </Link>
-        <Link to="/about" activeClassName="active">
+        <Link to="/about/" activeClassName="active">
           About
         </Link>
-        <Link to="/projects" activeClassName="active">
+        <Link to="/projects/" activeClassName="active">
           Projects
         </Link>
 
-        <Link to="/hire" activeClassName="active">
+        <Link to="/hire/" activeClassName="active">
           {" "}
           Hire
         </Link>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

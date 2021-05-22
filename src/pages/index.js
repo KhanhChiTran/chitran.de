@@ -5,6 +5,10 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import { BoxCenter } from "../components/Share/boxcenter"
 
+// import { Button } from "luly"
+
+// console.log(Button)
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -23,6 +27,14 @@ const BlogIndex = ({ data, location }) => {
       <BoxCenter>
         <h1>Chi Tran</h1>
         <p> Web Developer</p>
+        <h1>Working on </h1>
+        <a href="https://shop.chitran.de/" target="_blank">
+          Shop Demo : https://shop.chitran.de/
+        </a>{" "}
+        <hr style={{ maxWidth: 200, padding: 3, backgroundColor: "red" }} />
+        <a href="https://quiz.chitran.de/" target="_blank">
+          Quiz Game : https://quiz.chitran.de/
+        </a>{" "}
       </BoxCenter>
     </Layout>
   )

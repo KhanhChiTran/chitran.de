@@ -359,3 +359,6 @@ main {
     left: -13px !important ;
   }
 }
+a:hover {
+  cursor: pointer;
+}
