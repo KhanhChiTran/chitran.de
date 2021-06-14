@@ -11,26 +11,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import "./header.scss"
 
 const Header = () => {
-  // const data = useStaticQuery(graphql`
-  //   query BioQuery {
-  //     site {
-  //       siteMetadata {
-  //         author {
-  //           name
-  //           summary
-  //         }
-  //         social {
-  //           twitter
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  // const author = data.site.siteMetadata?.author;
-  // const social = data.site.siteMetadata?.social;
-
   return (
     <div className="header-wrap">
       <div className="header-logo">
@@ -38,6 +18,7 @@ const Header = () => {
           <h1>CHI</h1>{" "}
         </Link>
       </div>
+
       <nav className="header-nav">
         <Link to="/" activeClassName="active">
           Home
