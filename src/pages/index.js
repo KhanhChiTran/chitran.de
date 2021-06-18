@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
           Hello <RedPunkt>.</RedPunkt>
         </h2>
         <h2>I'm Chi Tran</h2>
-        <p> a Web Developer</p>
+        <p> Web Developer</p>
         {/* <h1>Working on </h1>
         <a href="https://shop.chitran.de/" target="_blank">
           Shop Demo : https://shop.chitran.de/

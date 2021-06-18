@@ -3,13 +3,16 @@ module.exports = {
     title: `ChiTran a Web Developer`,
     author: {
       name: `Chi Tran`,
-      summary: `who lives and works in Berlin building beautiful things.`,
+      summary: `who lives and works in Berlin building beautiful things.`
     },
     description: `A web developer personal website`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `chitran13051`,
-    },
+      twitter: `chitran13051`
+    }
+  },
+  flags: {
+    THE_FLAG: false
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -17,15 +20,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+        name: `blog`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
+        path: `${__dirname}/src/assets/images`
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -34,28 +37,28 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
-            },
+              maxWidth: 630
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
+          `gatsby-remark-smartypants`
+        ]
+      }
     },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/, // See below to configure properly
-        },
-      },
+          include: /assets/ // See below to configure properly
+        }
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -90,7 +93,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ "content:encoded": node.html }]
                 });
               });
             },
@@ -113,10 +116,10 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-          },
-        ],
-      },
+            output: "/rss.xml"
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -127,14 +130,14 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/chitranlogo.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/assets/images/chitranlogo.png` // This path is relative to the root of the site.
+      }
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-gatsby-cloud`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+  ]
 };
