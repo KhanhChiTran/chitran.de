@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 import { BoxCenter, RedPunkt } from "../components/Share/boxcenter";
+import girl3 from "../../static/girl3.svg";
 
 // import { Button } from "luly"
 
@@ -24,19 +25,16 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
       <BoxCenter>
-        <h2>
-          Hello <RedPunkt>.</RedPunkt>
-        </h2>
-        <h2>I'm Chi Tran</h2>
-        <p> Web Developer</p>
-        {/* <h1>Working on </h1>
-        <a href="https://shop.chitran.de/" target="_blank">
-          Shop Demo : https://shop.chitran.de/
-        </a>{" "}
-        <hr style={{ maxWidth: 200, padding: 3, backgroundColor: "red" }} />
-        <a href="https://quiz.chitran.de/" target="_blank">
-          Quiz Game : https://quiz.chitran.de/
-        </a>{" "} */}
+        <div>
+          <h2>
+            Hello <RedPunkt>.</RedPunkt>
+          </h2>
+          <h2>I'm Chi Tran</h2>
+          <p> Web Developer</p>
+        </div>
+        <div>
+          <img src={girl3} alt="" width="500px" />
+        </div>
       </BoxCenter>
     </Layout>
   );

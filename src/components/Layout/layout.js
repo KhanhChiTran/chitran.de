@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Header from "../Header/header";
 import SideBar from "../Sidebar/sidebar";
 import "./layout.scss";
+import girl4 from "../../../static/girl4.svg";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -29,9 +30,9 @@ const Layout = ({ location, title, children }) => {
       {/* <header className="global-header">{header}</header> */}
       <main>{children}</main>
       <SideBar />
-      <div className="circle"></div>
       <footer>
-        © {new Date().getFullYear()}. Made by{" "}
+        {/* <div className="circle"></div> */}© {new Date().getFullYear()}. Made
+        by{" "}
         <a target="__blank" href="https://www.chitran.de">
           ChiTran.
         </a>{" "}

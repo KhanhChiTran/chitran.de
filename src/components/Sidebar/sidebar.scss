@@ -6,6 +6,7 @@
   top: 40%;
   left: 0;
 }
+
 .side-bar_item {
   list-style: none;
   display: flex;
@@ -27,6 +28,16 @@
 .icon {
   color: black;
   width: 32px;
+}
+@media (max-width: 768px) {
+  .side-bar {
+    top: 7%;
+    right: 0;
+  }
+
+  .icon {
+    width: 20px;
+  }
 }
 .icon:hover {
   color: red;
