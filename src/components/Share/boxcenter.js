@@ -8,6 +8,10 @@ export const BoxCenter = styled.div`
   margin: 0 auto;
   margin-top: 20vh;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: red;
+  }
 `;
 export const RedPunkt = styled.span`
   color: red;
@@ -48,5 +52,48 @@ export const SvgAbout = styled.div`
   z-index: -888;
   @media (max-width: 768px) {
     opacity: 0.2;
+  }
+`;
+export const ProjectStyling = styled.div`
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 50px;
+  background: whitesmoke;
+  box-shadow: 0 6px 4px 2px #ccc;
+  position: relative;
+  img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  &:hover img {
+    opacity: 0.2;
+  }
+  &:hover > * {
+    opacity: 1;
+  }
+`;
+export const Overlay = styled.div`
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+  p {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 8px 10px;
   }
 `;

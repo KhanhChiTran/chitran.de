@@ -28,7 +28,7 @@ const About = ({ location }) => {
           <RedPunkt>.</RedPunkt> I started my coding journey almost exactly a
           year ago and now I'm learning full time and doing freelance projects
           on the side for my friends. I love combining the world of logic and
-          beautiful design to make intuitive and functional websites
+          beautiful design to make intuitive and functional websites.
           <br /> <RedPunkt>.</RedPunkt> Technology is undeniably important to
           our life. I enjoy seeing the results of my efforts helping the user's
           experience in the future. I'm excited to make the leap and continue
