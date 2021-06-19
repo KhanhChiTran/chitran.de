@@ -22,23 +22,22 @@ export default function projects({ location }) {
               <p>React</p>
               <p>Context API</p>
               <p>Material UI</p>
-              <a href="https://quiz.chitran.de/" target="_blank">
-                Go to E-Commerce Website
-              </a>
             </Overlay>
           </ProjectStyling>
-
+          <a href="https://quiz.chitran.de/" target="_blank">
+            E-Commerce Website
+          </a>
           <ProjectStyling>
             <img src={quiz} alt="" />
             <Overlay>
               <p>Redux</p>
               <p>Redux-Thunk</p>
               <p>Styled-Component</p>
-              <a href="https://quiz.chitran.de/" target="_blank">
-                Go to Trivia Game
-              </a>{" "}
             </Overlay>
           </ProjectStyling>
+          <a href="https://quiz.chitran.de/" target="_blank">
+            Trivia Game
+          </a>{" "}
         </div>
         <div>
           <ProjectStyling>
@@ -47,23 +46,22 @@ export default function projects({ location }) {
               <p>Redux</p>
               <p>Redux-Thunk</p>
               <p>Styled-Component</p>
-              <a href="https://quiz.chitran.de/" target="_blank">
-                Go to Todo App
-              </a>{" "}
             </Overlay>
           </ProjectStyling>
-
+          <a href="https://quiz.chitran.de/" target="_blank">
+            Todo App
+          </a>{" "}
           <ProjectStyling>
             <img src={weather} alt="" />
             <Overlay>
               <p>HTML</p>
               <p>CSS</p>
               <p>JavaScript</p>
-              <a href="https://chitran-weatherapp.netlify.app/" target="_blank">
-                Go to Weather App
-              </a>{" "}
             </Overlay>
           </ProjectStyling>
+          <a href="https://chitran-weatherapp.netlify.app/" target="_blank">
+            Weather App
+          </a>{" "}
         </div>
       </BoxCenter>
     </Layout>
