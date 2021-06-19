@@ -14,4 +14,10 @@
 footer {
   position: relative;
   bottom: -2rem;
+  a {
+    // color: red;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 600;
+  }
 }

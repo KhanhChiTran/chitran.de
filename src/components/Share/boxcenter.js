@@ -16,6 +16,7 @@ export const BoxCenter = styled.div`
 export const RedPunkt = styled.span`
   color: red;
   font-size: 3rem;
+  line-height: 1;
 `;
 export const Button = styled.button`
   padding: 15px 30px;
@@ -35,7 +36,7 @@ export const Button = styled.button`
   }
 `;
 export const TextWrap = styled.div`
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: var(--font-body);
   font-size: 1.2rem;
   width: 100%;
   padding: 30px;
@@ -50,8 +51,8 @@ export const SvgAbout = styled.div`
   bottom: 0;
   right: 0;
   z-index: -888;
+  opacity: 0.2;
   @media (max-width: 768px) {
-    opacity: 0.2;
   }
 `;
 export const ProjectStyling = styled.div`

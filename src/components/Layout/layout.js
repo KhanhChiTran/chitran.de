@@ -30,19 +30,21 @@ const Layout = ({ location, title, children }) => {
       {/* <header className="global-header">{header}</header> */}
       <main>{children}</main>
       <SideBar />
-      <footer>
+      <footer style={{ textAlign: "center" }}>
         {/* <div className="circle"></div> */}© {new Date().getFullYear()}. Made
         by{" "}
         <a target="__blank" href="https://www.chitran.de">
-          ChiTran.
+          ChiTran
         </a>{" "}
+        <br />
         Built with{" "}
         <a target="__blank" href="https://www.gatsbyjs.org">
-          Gatsby.
+          Gatsby
         </a>{" "}
+        <br />
         Deployed with{" "}
         <a target="__blank" href="https://www.netlify.com">
-          Netlify.
+          Netlify
         </a>
       </footer>
     </div>
