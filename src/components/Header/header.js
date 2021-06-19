@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import "./header.scss"
+import * as React from "react";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import "./header.scss";
 
 const Header = () => {
   return (
@@ -30,13 +30,13 @@ const Header = () => {
           Projects
         </Link>
 
-        <Link to="/hire/" activeClassName="active">
+        <Link to="/contact/" activeClassName="active">
           {" "}
-          Hire
+          Contact Me
         </Link>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

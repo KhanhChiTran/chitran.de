@@ -6,7 +6,7 @@ export const BoxCenter = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: ${(props) => props.marginTop};
   text-align: center;
   a {
     text-decoration: none;

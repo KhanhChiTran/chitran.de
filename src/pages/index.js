@@ -24,7 +24,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
-      <BoxCenter>
+      <BoxCenter marginTop="20vh">
         <div>
           <h2>
             Hello <RedPunkt>.</RedPunkt>

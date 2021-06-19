@@ -3,7 +3,7 @@ import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 import { BoxCenter, Overlay } from "../components/Share/boxcenter";
 import girl6 from "../../static/girl6.svg";
-import { ProjectStyling } from "../components/Share/boxcenter";
+import { ProjectStyling, TextWrap } from "../components/Share/boxcenter";
 import ecomWeb from "../../static/shopping-online.svg";
 import quiz from "../../static/quiz.svg";
 import weather from "../../static/weather.svg";
@@ -12,8 +12,9 @@ export default function projects({ location }) {
   return (
     <Layout location={location}>
       <SEO title="My Own Projects" />
-      <h2 style={{ textAlign: "center" }}>My Works </h2>
-      <BoxCenter>
+
+      <h2 style={{ textAlign: "center", marginTop: "60px" }}>My Works </h2>
+      <BoxCenter marginTop="0px">
         <div>
           <ProjectStyling>
             <img src={ecomWeb} alt="" />
