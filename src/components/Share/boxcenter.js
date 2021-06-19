@@ -6,11 +6,14 @@ export const BoxCenter = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 20vh;
+  margin-top: 10vh;
   text-align: center;
   a {
     text-decoration: none;
     color: red;
+  }
+  @media (max-width: 768px) {
+    margin-top: 2vh;
   }
 `;
 export const RedPunkt = styled.span`
@@ -51,8 +54,8 @@ export const SvgAbout = styled.div`
   bottom: 0;
   right: 0;
   z-index: -888;
-  opacity: 0.2;
   @media (max-width: 768px) {
+    opacity: 0.2;
   }
 `;
 export const ProjectStyling = styled.div`
@@ -68,7 +71,7 @@ export const ProjectStyling = styled.div`
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: 0.5s ease;
     backface-visibility: hidden;
   }
