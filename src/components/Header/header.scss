@@ -115,9 +115,8 @@
   width: 100vw;
   top: 0;
   padding-top: 100px;
-
+  transition: 0.7s ease;
   transform: translateX(100vw);
-  transition: transform 1s;
 }
 .overlay {
   transform: translateX(0);
@@ -140,7 +139,6 @@
 
 .delete {
   cursor: pointer;
-  // padding-top: 3px;
   font-size: 1.4rem;
   font-weight: bolder;
   color: red;

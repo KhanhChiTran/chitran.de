@@ -13,10 +13,6 @@ import "./header.scss";
 const Header = () => {
   const [overlay, setOverlay] = useState(false);
 
-  // useEffect(() => {
-  //   const menu = document.querySelector(".normal");
-  //   overlay ? (menu.style.right = "-100%") : (menu.style.right = "-100%");
-  // }, [overlay]);
   return (
     <div className="header-wrap">
       <div className="header-logo">
