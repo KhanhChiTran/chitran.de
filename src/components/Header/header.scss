@@ -71,25 +71,67 @@
   cursor: pointer;
   display: none;
   padding-top: 12px;
-  span {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  .bar {
     display: block;
+    position: absolute;
     width: 25px;
     height: 4px;
     background-color: red;
     margin: 2px;
     border-radius: 5px;
   }
+  .bar1 {
+    top: 10px;
+    right: 5px;
+  }
+  .bar2 {
+    top: 18px;
+    right: 5px;
+  }
+  .bar3 {
+    top: 26px;
+    right: 5px;
+  }
+  .delete-bar-1 {
+    transform: rotate(-410deg);
+    transition: 0.55s 0.5s;
+    top: 15px;
+  }
+  .delete-bar-2 {
+    opacity: 0;
+    transition: 0.55s 0.5s;
+  }
+  .delete-bar-3 {
+    transform: rotate(50deg);
+    transition: 0.55s 0.5s;
+    top: 15px;
+  }
+}
+.normal {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding-top: 100px;
+
+  transform: translateX(100vw);
+  transition: transform 1s;
+}
+.overlay {
+  transform: translateX(0);
 }
 .overlay-menu {
   .overlay-menu-link {
     display: block;
     text-decoration: none;
     padding: 30px;
-    // background-color: rosybrown;
     box-shadow: 9px 2px 5px 0px #00000017;
     color: black;
     font-size: 1.5rem;
     font-weight: bolder;
+    text-align: center;
   }
   :hover {
     color: red;
@@ -98,7 +140,7 @@
 
 .delete {
   cursor: pointer;
-  padding-top: 7px;
+  // padding-top: 3px;
   font-size: 1.4rem;
   font-weight: bolder;
   color: red;
@@ -111,6 +153,7 @@
   }
   .burger-menu {
     display: block;
+    z-index: 2020;
   }
 }
 @keyframes oo {
