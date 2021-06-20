@@ -56,6 +56,7 @@ export const SvgAbout = styled.div`
   z-index: -888;
   @media (max-width: 768px) {
     opacity: 0.2;
+    bottom: -10%;
   }
 `;
 export const ProjectStyling = styled.div`

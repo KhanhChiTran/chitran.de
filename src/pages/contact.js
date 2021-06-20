@@ -12,7 +12,7 @@ export default function contact({ location }) {
           Contact <RedPunkt>.</RedPunkt> Me
         </h2>
         <p style={{ textAlign: "center" }}>khanhchi.tran13051@gmail.com</p>
-        <img src={girl} alt="" width="500px" />
+        <img src={girl} alt="" style={{ width: "100%", maxWidth: "500px" }} />
       </TextWrap>
     </Layout>
   );

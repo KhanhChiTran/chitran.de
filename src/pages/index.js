@@ -33,7 +33,11 @@ const BlogIndex = ({ data, location }) => {
           <p> Web Developer</p>
         </div>
         <div>
-          <img src={girl3} alt="" width="500px" />
+          <img
+            src={girl3}
+            alt=""
+            style={{ width: "100%", maxWidth: "500px" }}
+          />
         </div>
       </BoxCenter>
     </Layout>

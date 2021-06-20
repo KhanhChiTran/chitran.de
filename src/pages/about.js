@@ -42,7 +42,7 @@ const About = ({ location }) => {
         </Button>
       </TextWrap>
       <SvgAbout>
-        <img src={girl4} alt="" width="500px" />
+        <img src={girl4} alt="" style={{ width: "100%", maxWidth: "500px" }} />
       </SvgAbout>
     </Layout>
   );
