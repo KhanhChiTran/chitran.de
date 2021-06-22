@@ -35,7 +35,7 @@ const About = ({ location }) => {
           refining my skills with the right company.
         </p>
         <Button>
-          <a href="../../static/ChiTranCV.pdf">Download My CV</a>
+          <a href="../../static/cv-chitran.pdf">Download My CV</a>
         </Button>
         <Button>
           <a href="/projects">My Projects</a>
