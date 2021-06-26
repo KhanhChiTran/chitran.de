@@ -38,7 +38,7 @@ const About = ({ location }) => {
           <a href="/cv-chitran.pdf">Download My CV</a>
         </Button>
         <Button>
-          <a href="/projects">My Projects</a>
+          <Link to="/projects">My Projects</Link>
         </Button>
       </TextWrap>
       <SvgAbout>
