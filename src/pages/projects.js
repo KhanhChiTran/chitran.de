@@ -24,7 +24,7 @@ export default function projects({ location }) {
               <p>Material UI</p>
             </Overlay>
           </ProjectStyling>
-          <a href="https://https://shop.chitran.de/" target="_blank">
+          <a href="https://shop.chitran.de/" target="_blank">
             E-Commerce Website
           </a>
           <ProjectStyling>
