@@ -24,7 +24,7 @@ export default function projects({ location }) {
               <p>Material UI</p>
             </Overlay>
           </ProjectStyling>
-          <a href="https://quiz.chitran.de/" target="_blank">
+          <a href="https://https://shop.chitran.de/" target="_blank">
             E-Commerce Website
           </a>
           <ProjectStyling>
@@ -48,9 +48,9 @@ export default function projects({ location }) {
               <p>Styled-Component</p>
             </Overlay>
           </ProjectStyling>
-          <a href="https://quiz.chitran.de/" target="_blank">
-            Todo App
-          </a>{" "}
+          {/* <a href="https://quiz.chitran.de/" target="_blank"> */}
+          Todo App
+          {/* </a>{" "} */}
           <ProjectStyling>
             <img src={weather} alt="" />
             <Overlay>
