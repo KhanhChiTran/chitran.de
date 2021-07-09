@@ -1,13 +1,13 @@
-import React from "react";
-import Layout from "../components/Layout/layout";
-import SEO from "../components/seo";
-import { BoxCenter, Overlay } from "../components/Share/boxcenter";
-import girl6 from "../../static/girl6.svg";
-import { ProjectStyling, TextWrap } from "../components/Share/boxcenter";
-import ecomWeb from "../../static/shopping-online.svg";
-import quiz from "../../static/quiz.svg";
-import weather from "../../static/weather.svg";
-import todo from "../../static/todo.svg";
+import React from "react"
+import Layout from "../components/Layout/layout"
+import SEO from "../components/seo"
+import { BoxCenter, Overlay } from "../components/Share/boxcenter"
+import girl6 from "../../static/girl6.svg"
+import { ProjectStyling, TextWrap } from "../components/Share/boxcenter"
+import ecomWeb from "../../static/shopping-online.svg"
+import quiz from "../../static/quiz.svg"
+import weather from "../../static/weather.svg"
+import todo from "../../static/todo.svg"
 export default function projects({ location }) {
   return (
     <Layout location={location}>
@@ -43,14 +43,14 @@ export default function projects({ location }) {
           <ProjectStyling>
             <img src={todo} alt="" />
             <Overlay>
-              <p>Redux</p>
-              <p>Redux-Thunk</p>
-              <p>Styled-Component</p>
+              <p>MongoDB</p>
+              <p>Lambda functions</p>
+              <p>React</p>
             </Overlay>
           </ProjectStyling>
-          {/* <a href="https://quiz.chitran.de/" target="_blank"> */}
-          Todo App
-          {/* </a>{" "} */}
+          <a href="https://moviebay.chitran.de/" target="_blank">
+            Movie bay
+          </a>{" "}
           <ProjectStyling>
             <img src={weather} alt="" />
             <Overlay>
@@ -65,5 +65,5 @@ export default function projects({ location }) {
         </div>
       </BoxCenter>
     </Layout>
-  );
+  )
 }
