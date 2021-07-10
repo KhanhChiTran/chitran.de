@@ -5,13 +5,24 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState } from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import "./header.scss";
+import React, { useState, useEffect } from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import "./header.scss"
 
 const Header = () => {
-  const [overlay, setOverlay] = useState(false);
+  const [overlay, setOverlay] = useState(false)
+  const handleResize = () => {
+    if (window.innerWidth > 786) {
+      setOverlay(false)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
 
   return (
     <div className="header-wrap">
@@ -71,7 +82,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
