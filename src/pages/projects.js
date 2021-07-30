@@ -62,6 +62,17 @@ export default function projects({ location }) {
           <a href="https://chitran-weatherapp.netlify.app/" target="_blank">
             Weather App
           </a>{" "}
+          <ProjectStyling>
+            <img src={weather} alt="" />
+            <Overlay>
+              <p>React</p>
+              <p>Lamda functions</p>
+              <p>Styled-Component</p>
+            </Overlay>
+          </ProjectStyling>
+          <a href="https://gaovegan.de/" target="_blank">
+            GaoVegan Restaurant
+          </a>{" "}
         </div>
       </BoxCenter>
     </Layout>
