@@ -12,20 +12,20 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+      <h1 className='main-heading'>
+        <Link to='/'>{title}</Link>
       </h1>
     );
   } else {
     header = (
-      <Link className="header-link-home" to="/">
+      <Link className='header-link-home' to='/'>
         {title}
       </Link>
     );
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <div className='global-wrapper' data-is-root-path={isRootPath}>
       <Header />
       {/* <header className="global-header">{header}</header> */}
       <main>{children}</main>
@@ -33,17 +33,17 @@ const Layout = ({ location, title, children }) => {
       <footer style={{ textAlign: "center" }}>
         {/* <div className="circle"></div> */}© {new Date().getFullYear()}. Made
         by{" "}
-        <a target="__blank" href="https://www.chitran.de">
+        <a target='__blank' href='https://www.chitran.de'>
           ChiTran
         </a>{" "}
         <br />
         Built with{" "}
-        <a target="__blank" href="https://www.gatsbyjs.org">
+        <a target='__blank' href='https://www.gatsbyjs.org'>
           Gatsby
         </a>{" "}
         <br />
         Deployed with{" "}
-        <a target="__blank" href="https://www.netlify.com">
+        <a target='__blank' href='https://www.netlify.com'>
           Netlify
         </a>
       </footer>
