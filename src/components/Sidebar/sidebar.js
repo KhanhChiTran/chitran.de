@@ -7,7 +7,7 @@ function SideBar() {
   return (
     <ul className="side-bar">
       <li className="side-bar_item">
-        <a href="https://github.com/KhanhChiTran">
+        <a href="https://github.com/chitran13051">
           <GithubIcon className="icon github" />
         </a>
         {/* <span>Github</span> */}

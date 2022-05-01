@@ -6,10 +6,6 @@ import SEO from "../components/seo";
 import { BoxCenter, RedPunkt } from "../components/Share/boxcenter";
 import girl3 from "../../static/girl3.svg";
 
-// import { Button } from "luly"
-
-// console.log(Button)
-
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const posts = data.allMarkdownRemark.nodes;
@@ -23,19 +19,22 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Home" />
-      <BoxCenter marginTop="20vh">
+      <SEO title='Home' />
+      <BoxCenter marginTop='20vh'>
         <div>
           <h2>
             Hello <RedPunkt>.</RedPunkt>
           </h2>
           <h2>I'm Chi Tran</h2>
-          <p> Web Developer</p>
+          <p>
+            {" "}
+            Frontend Engineer at <a href='https://hey.car'>Heycar group</a>{" "}
+          </p>
         </div>
         <div>
           <img
             src={girl3}
-            alt=""
+            alt=''
             style={{ width: "100%", maxWidth: "500px" }}
           />
         </div>
