@@ -27,8 +27,10 @@ const BlogIndex = ({ data, location }) => {
           </h2>
           <h2>I'm Chi Tran</h2>
           <p>
-            {" "}
-            Frontend Engineer at <a href='https://hey.car'>Heycar group</a>{" "}
+            Software Engineer at
+            <a href='https://www.linkedin.com/company/mobilize-financial-services-deutschland/'>
+              Mobilize Financial Services – Deutschland
+            </a>
           </p>
         </div>
         <div>
