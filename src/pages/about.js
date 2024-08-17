@@ -21,7 +21,7 @@ const About = ({ location }) => {
           About Me <RedPunkt>.</RedPunkt>
         </h2>
         <p>
-          I'm a Frontend Engineer, a Chinese Teacher, living in Berlin, Germany.{" "}
+          I'm a Frontend Engineer, a Chinese Teacher, living in Berlin, Germany.
           {"<code/>"}
           <br />
           <RedPunkt>.</RedPunkt> I started my coding journey almost exactly a
