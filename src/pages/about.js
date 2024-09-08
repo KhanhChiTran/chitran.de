@@ -32,6 +32,8 @@ const About = ({ location }) => {
           our life. I enjoy seeing the results of my efforts helping the user's
           experience in the future. I'm excited to make the leap and continue
           refining my skills with the right company.
+          <br /> <RedPunkt>.</RedPunkt> Frontend: JavaScript, TypeScript, React.js, Next.js
+          <br /> <RedPunkt>.</RedPunkt>  Backend: Java  with Java Spring Boot, Expressjs and Nextjs     
         </p>
         <Button>
           <a href='/chitran.de.pdf'>Download My CV</a>
